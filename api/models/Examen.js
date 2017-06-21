@@ -17,6 +17,11 @@ module.exports = {
   			columnName:'id_examen'
   		},
 
+      //referencias
+      Pregunta:{
+        collection:'Pregunta',
+        via:'id_pregunta_x'
+      },
       //llaves foraneas
       id_area_r:{
         model:'Area'

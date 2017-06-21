@@ -34,8 +34,10 @@ module.exports = {
         //llave foranea
         id_pregunta_r:{
             model:'Tema'
+        },
+        id_pregunta_x:{
+            model:'Examen'
         }
-
     }
 };
 
