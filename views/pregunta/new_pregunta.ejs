@@ -21,19 +21,31 @@
 
                 <div class="form-group">
                   <label>Pregunta: </label>
-                  <input type="text" name="pregunta" class="form-control" id="name" placeholder="CI" data-rule="minlen:4" data-msg="Ingrese el ID del pregunta" title="Nombre" required/>
+                  <input type="text" name="pregunta" class="form-control" id="name" placeholder="Ingrese la pregunta" data-rule="minlen:4" data-msg="Ingrese el ID del pregunta" title="Nombre" required/>
                   <div class="validation"></div>
                 </div>
 
                 <div class="form-group">
                   <label>Respuesta:</label>
-                  <input type="text" name="respuesta" class="form-control" id="name" placeholder="nombres apellidos" data-rule="minlen:5" data-msg="Ingrese el nombre completo del pregunta" title="Nombre" required/>
+                  <input type="text" name="respuesta" class="form-control" id="name" placeholder="Ingrese la respuesta correcta (solo esta sera valida)" data-rule="minlen:5" data-msg="Ingrese el nombre completo del pregunta" title="Respuesta" required/>
                   <div class="validation"></div>
                 </div>
                 
                 <div class="form-group">
-                  <label>Compljidad:</label>
-                  <input type="text" class="form-control" name="complejidad" id="name" placeholder="alguien@gmail.com" data-rule="minlen:5" data-msg="Ingrese un email valido" required/>
+                  <label>Complejidad:</label>
+                  <select class="form-control" type="text" name="complejidad" id="complejidad" required/>
+                      <option>
+                          1
+                      </option>
+                      <option>
+                          2
+                      </option>
+                      <option>
+                          3
+                      </option>
+                      <option>
+                          4
+                      </option>
                   <div class="validation"></div>
                 </div>
                 
