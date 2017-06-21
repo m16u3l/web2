@@ -22,15 +22,11 @@
               <td><a href="/evaluador/verEvaluadores/<%= evaluador.id %>" class="btn btn-sm btn-primary">Ver</a></td>
               <td><a href="/evaluador/editar_evaluador/<%= evaluador.id %>" class="btn btn-sm btn-warning">Editar</a></td>
               <td>
-                <form action="/evaluador/eliminarEvaluador/<%= evaluador.id %>" method="POST"> 
-                      <input type="hidden" name="_method" value="Editar"/>
-                      <input type="submit" class="btn btn-sm btn-danger" value="Borrar"/>
-                      <input type="hidden" name="_csrf" value="<%= _csrf %>" />
-                  </form>
+              <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
               </td>
           </tr>
           <% }) %>
       </table>
       <a href="/evaluador/new_evaluador">Registrar nuevo evaluador</a>
  </div>
-  </section>
+  </section>  

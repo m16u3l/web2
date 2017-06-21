@@ -15,7 +15,12 @@ module.exports = {
   			autoIncrement:true,
   			primaryKey:true,
   			columnName:'id_examen'
-  		}
+  		},
+
+      //llaves foraneas
+      id_area_r:{
+        model:'Area'
+      }
 
   	}
 };

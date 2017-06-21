@@ -34,10 +34,9 @@ module.exports = {
 		});
 	},
 	index: function (req, res) {
-		Evaluador.find(function foundEvaluador (err, evaluadores) {
-        	
-        	
-        	if(err) return res.redirect('registrar_evaluador');
+		Evaluador.find(function found_evaluador (err, evaluadores) {
+        	if(err) 
+        		return res.redirect('registrar_evaluador');
         	res.view({
           	evaluadores: evaluadores
         });

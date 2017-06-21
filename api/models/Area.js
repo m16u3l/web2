@@ -26,7 +26,20 @@ module.exports = {
       Evaluador:{
         collection:'Evaluador',
         via:'id_area_r'
+      },
+      Tema:{
+        collection:'Tema',
+        via:'id_area_r'
+      },
+      Comite:{
+        collection:'Comite',
+        via:'id_area_r'
+      },
+      Examen:{
+        collection:'Examen',
+        via:'id_area_r'
       }
+
 
   	}
 };

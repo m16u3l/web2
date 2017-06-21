@@ -19,7 +19,12 @@ module.exports = {
   		nombre_comite:{
   			type:'string',
   			required: true
-  		}
+  		},
+
+      //
+      id_area_r:{
+        model:'Area'
+      }
 
 
   	}

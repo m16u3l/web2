@@ -19,8 +19,13 @@ module.exports = {
   		nombre_tema:{
   			type:'string',
   			required:true,
-  			columnNamen:'nombre_tema'
+  			columnName:'nombre_tema'
   		},
+
+      //llave foranea
+      id_area_r:{
+        model:'Area'
+      },
 
       //referencias
       Pregunta:{
