@@ -79,11 +79,7 @@ module.exports.connections = {
     database: 'web',
     host: 'localhost',
     user: 'postgres',
-<<<<<<< HEAD
     password: '',
-=======
-    password: 'postgres',
->>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
     port: 5432,
     poolSize: 10,
     ssl: false
