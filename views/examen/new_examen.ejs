@@ -1,0 +1,54 @@
+<br><br>
+<section id="new_examen" class ="fill">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 " ></div><h6>INSTRUCCIONES</h6>
+                <ol class="list-group">
+                    <li class="list-group-item">1. Seleccione las preguntas que desea incluir en el examen.</li>
+                    <li class="list-group-item">2. Un examen esta compuesto de 10 preguntas.</li>
+                    <li class="list-group-item">3. Por favor tenga cuidado de seleccionar preguntas distintas en cada espacio.
+                    </li>
+                </ol>
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="">Pregunta 1</label>
+                                <select name="pregunta" id="" class="form-control">
+                                    <%_.each(preguntas,function(Pregunta){%>
+                                    <option value="<%=pregunta.id_pregunta%>"><%= pregunta.pregunta%></option>
+                                    <%})%>
+                                </select>
+                                <label for="">Pregunta 2</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 3</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 4</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 5</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 6</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 7</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 8</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 9</label>
+                                <select name="" id="" class="form-control"></select>
+                                <label for="">Pregunta 10</label>
+                                <select name="" id="" class="form-control"></select>
+                                <input type="submit" class="form-control btn-primary" value="Crear Examen"> 
+
+                            </div>
+                        </form>    
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
