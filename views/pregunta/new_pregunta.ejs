@@ -1,60 +1,61 @@
 <!--==========================
-  Contact Section
+Contact Section
 ============================--> 
-  <section id="contact" class="fill">
+<section id="contact" class="fill">
     <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Registro de preguntas</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Ingrese la pregunta con su respuesta</p>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Registro de preguntas</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Ingrese la pregunta con su respuesta</p>
+            </div>
         </div>
-      </div>
-      
-      <div class="row">
-        
-        <div class="col-md-8 col-md-push-3">
-          <div class="form">
-            <div id="sendmessage">Su registro fue enviado</div>
-            <div id="errormessage"></div>
-            <form action="/pregunta/registrar_pregunta" method="post" role="form" class="contactForm">
 
-                <div class="form-group">
-                  <label>Pregunta: </label>
-                  <input type="text" name="pregunta" class="form-control" id="name" placeholder="CI" data-rule="minlen:4" data-msg="Ingrese el ID del pregunta" title="Nombre" required/>
-                  <div class="validation"></div>
-                </div>
+        <div class="row">
 
-                <div class="form-group">
-                  <label>Respuesta:</label>
-                  <input type="text" name="respuesta" class="form-control" id="name" placeholder="nombres apellidos" data-rule="minlen:5" data-msg="Ingrese el nombre completo del pregunta" title="Nombre" required/>
-                  <div class="validation"></div>
-                </div>
-                
-                <div class="form-group">
-                  <label>Compljidad:</label>
-                  <input type="text" class="form-control" name="complejidad" id="name" placeholder="alguien@gmail.com" data-rule="minlen:5" data-msg="Ingrese un email valido" required/>
-                  <div class="validation"></div>
-                </div>
-                
-                <div class="form-group">
-                  <label>Tema:</label>
+            <div class="col-md-8 col-md-push-3">
+                <div class="form">
+                    <div id="sendmessage">Su registro fue enviado</div>
+                    <div id="errormessage"></div>
+                    <form action="/pregunta/registrar_pregunta" method="post" role="form" class="contactForm">
+                        <div class="form-group">
 
-                  <select class="form-control" name="tema_pregunta">
-                       <%_.each(temas,function(tema){%>
-                      <option value="<%=tema.id_tema%>"><%= tema.nombre_tema%></option>
-                      <%})%>
-                 </select>
-                  <div class="validation"></div>
+                            <label>Pregunta: </label>
+                            <input type="text" name="pregunta" class="form-control" id="name" placeholder="Ingrese la pregunta" data-rule="minlen:4" data-msg="Debe ingresar una pregunta" title="Pregunta" required/>
+                            <div class="validation"></div>
+
+
+
+                            <label>Respuesta:</label>
+                            <input type="text" name="respuesta" class="form-control" id="name" placeholder="Ingrese la pregunta (solo una)" data-rule="minlen:5" data-msg="Ingrese la respuesta correcta (unica)" title="respuesta" required/>
+                            <div class="validation"></div>
+
+
+
+                            <label>Complejidad:</label>
+                            <select class="form-control" name="complejidad" id="complejidad" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            </select>
+                            <label>Tema:</label>
+
+                            <select class="form-control" name="tema_pregunta">
+                                <%_.each(temas,function(tema){%>
+                                <option value="<%=tema.id_tema%>"><%= tema.nombre_tema%></option>
+                                <%})%>
+                            </select>
+                            <div class="validation"></div>
+
+                            <div class="text-center">
+                                <input type="submit" name="Registrar Evaludor" value="Registrar pregunta" class="btn btn-default"/>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                
-                <div class="text-center">
-                  <input type="submit" name="Registrar Evaludor" value="Registrar pregunta" class="btn btn-default"/>
-                </div>
-            </form>
-          </div>
+            </div>
+
         </div>
-        
-      </div>
     </div>
-  </section>
+</section>
