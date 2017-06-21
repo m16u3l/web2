@@ -1,0 +1,32 @@
+<section id="contact" class="fill">
+    <div class="container wow fadeInUp">
+      <h3>temaes
+      <table class='table'>
+          <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Area</th>
+              <!--<th>Area</th>-->
+              <th></th>
+              <th></th>
+              <th></th>
+          </tr>
+          <% _.each(temas, function(tema) { %>
+          <tr data-id="<%= tema.id %>" data-model="tema">
+              <td><%= tema.id_tema %></td>
+              <td><%= tema.nombre_tema %></td>
+              <td><%= tema.id_area_r %></td>
+              <!--==========================
+              <td><%= tema.id_area_r %></td>
+              ============================--> 
+              <td><a href="/tema/ver_tema/<%= tema.id %>" class="btn btn-sm btn-primary">Ver</a></td>
+              <td><a href="/tema/editar_tema/<%= tema.id %>" class="btn btn-sm btn-warning">Editar</a></td>
+              <td>
+              <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
+              </td>
+          </tr>
+          <% }) %>
+      </table>
+      <a href="/tema/new_tema">Registrar nuevo tema</a>
+ </div>
+  </section>

@@ -1,0 +1,32 @@
+<section id="contact" class="fill">
+    <div class="container wow fadeInUp">
+      <h3>Evaluadores
+      <table class='table'>
+          <tr>
+              <th>CI</th>
+              <th>Nombres</th>
+              <th>Email</th>
+              <!--<th>Area</th>-->
+              <th></th>
+              <th></th>
+              <th></th>
+          </tr>
+          <% _.each(evaluadores, function(evaluador) { %>
+          <tr data-id="<%= evaluador.id %>" data-model="evaluador">
+              <td><%= evaluador.ci_evaluador %></td>
+              <td><%= evaluador.nombre_evaluador %></td>
+              <td><%= evaluador.email_evaluador %></td>
+              <!--==========================
+              <td><%= evaluador.id_area_r %></td>
+              ============================--> 
+              <td><a href="/evaluador/verEvaluadores/<%= evaluador.id %>" class="btn btn-sm btn-primary">Ver</a></td>
+              <td><a href="/evaluador/editar_evaluador/<%= evaluador.id %>" class="btn btn-sm btn-warning">Editar</a></td>
+              <td>
+              <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
+              </td>
+          </tr>
+          <% }) %>
+      </table>
+      <a href="/evaluador/new_evaluador">Registrar nuevo evaluador</a>
+ </div>
+  </section>  

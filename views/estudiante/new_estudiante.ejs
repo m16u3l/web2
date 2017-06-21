@@ -1,0 +1,42 @@
+<section id="contact" class="fill">
+    <div class="container wow fadeInUp">
+      <h1>EN DESARROLLO</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Registro Estudiante</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Ingrese sus datos personales</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        
+        <div class="col-md-8 col-md-push-3">
+          <div class="form">
+            <div id="sendmessage">Su registro fue enviado</div>
+            <div id="errormessage"></div>
+            <form action="/estudiante/registrar_estudiante" method="post" role="form" class="contactForm">
+
+                <div class="form-group">
+                  <label>Codigo RUDE</label>
+                  <input type="text" name="cod_rude" class="form-control" id="name" placeholder="cod" data-rule="minlen:4" data-msg="Ingrese el ID del evaluador" title="Nombre" required/>
+                  <div class="validation"></div>
+                </div>
+
+               
+                <div class="form-group">
+                  <label>CI</label>
+                  <input type="text" name="ci_estudiante" class="form-control" id="name" placeholder="CI" data-rule="minlen:5" data-msg="Ingrese el nombre del evaluador" title="Nombre" required/>
+                  <div class="validation"></div>
+                </div>
+                
+                <div class="text-center">
+                  <input type="submit" name="Registrar Estudiante" value="Registrarse" class="btn btn-default"/>
+                </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+ </div>
+  </section>

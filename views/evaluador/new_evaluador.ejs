@@ -1,0 +1,60 @@
+<!--==========================
+  Contact Section
+============================--> 
+  <section id="contact" class="fill">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Registro de evaluador</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Ingrese los datos del evaluador</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        
+        <div class="col-md-8 col-md-push-3">
+          <div class="form">
+            <div id="sendmessage">Su registro fue enviado</div>
+            <div id="errormessage"></div>
+            <form action="/evaluador/registrar_evaluador" method="post" role="form" class="contactForm">
+
+                <div class="form-group">
+                  <label>CI:</label>
+                  <input type="text" name="ci_evaluador" class="form-control" id="name" placeholder="CI" data-rule="minlen:4" data-msg="Ingrese el ID del evaluador" title="Nombre" required/>
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-group">
+                  <label>Nombre Completo:</label>
+                  <input type="text" name="nombre_evaluador" class="form-control" id="name" placeholder="nombres apellidos" data-rule="minlen:5" data-msg="Ingrese el nombre completo del evaluador" title="Nombre" required/>
+                  <div class="validation"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label>Correo electronico:</label>
+                  <input type="email" class="form-control" name="email_evaluador" id="email" placeholder="alguien@gmail.com" data-rule="email" data-msg="Ingrese un email valido" required/>
+                  <div class="validation"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label>Area:</label>
+
+                  <select class="form-control" name="area_evaluador">
+                       <%_.each(areas,function(area){%>
+                      <option value="<%=area.id_area%>"><%= area.nombre_area%></option>
+                      <%})%>
+                 </select>
+                  <div class="validation"></div>
+                </div>
+                
+                <div class="text-center">
+                  <input type="submit" name="Registrar Evaludor" value="Registrar Evaluador" class="btn btn-default"/>
+                </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>

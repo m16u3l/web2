@@ -1,0 +1,29 @@
+<br><br>
+<section id="area" class="fill">
+    <div class="container container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Areas</h3>
+                <div class="section-title-divider"></div>
+
+                <p class="section-description">Seleccione el area a la que desea acceder</p>
+            </div>
+        </div>
+        
+        <div class="row">
+
+            <%_.each(areas,function(area){%>
+            <div class="col-lg-6 service-item">
+                <div class="service-icon"><i class="fa fa-gears"></i></div>
+                <h4 class="service-title">
+                    <a href="/area/<%=area.id_area%>">
+                    <%= area.nombre_area%>
+                    </a>
+                </h4>
+                <p class="service-description">Esta es el area de <%= area.nombre_area%></p>
+            </div>
+            <%})%>
+        </div>
+        <a href="/area/new_area">Registrar nueva Area</a>
+    </div>  
+</section>
