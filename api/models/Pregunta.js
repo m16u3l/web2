@@ -26,9 +26,9 @@ module.exports = {
     		required:true,
     		columnName:'respuesta'
     	},
-    	complejidad_pregunta:{
+    	complejidad:{
     		type:'integer',
-    		columnName:'complejidad_pregunta'
+    		columnName:'complejidad'
     	},
 
         //llave foranea

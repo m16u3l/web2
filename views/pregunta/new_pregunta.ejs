@@ -17,39 +17,39 @@
           <div class="form">
             <div id="sendmessage">Su registro fue enviado</div>
             <div id="errormessage"></div>
-            <form action="/evaluador/registrar_evaluador" method="post" role="form" class="contactForm">
+            <form action="/pregunta/registrar_pregunta" method="post" role="form" class="contactForm">
 
                 <div class="form-group">
                   <label>Pregunta: </label>
-                  <input type="text" name="pregunta" class="form-control" id="name" placeholder="CI" data-rule="minlen:4" data-msg="Ingrese el ID del evaluador" title="Nombre" required/>
+                  <input type="text" name="pregunta" class="form-control" id="name" placeholder="CI" data-rule="minlen:4" data-msg="Ingrese el ID del pregunta" title="Nombre" required/>
                   <div class="validation"></div>
                 </div>
 
                 <div class="form-group">
                   <label>Respuesta:</label>
-                  <input type="text" name="respuesta" class="form-control" id="name" placeholder="nombres apellidos" data-rule="minlen:5" data-msg="Ingrese el nombre completo del evaluador" title="Nombre" required/>
+                  <input type="text" name="respuesta" class="form-control" id="name" placeholder="nombres apellidos" data-rule="minlen:5" data-msg="Ingrese el nombre completo del pregunta" title="Nombre" required/>
                   <div class="validation"></div>
                 </div>
                 
                 <div class="form-group">
                   <label>Compljidad:</label>
-                  <input type="email" class="form-control" name="complejidad_pregunta" id="email" placeholder="alguien@gmail.com" data-rule="email" data-msg="Ingrese un email valido" required/>
+                  <input type="text" class="form-control" name="complejidad" id="name" placeholder="alguien@gmail.com" data-rule="minlen:5" data-msg="Ingrese un email valido" required/>
                   <div class="validation"></div>
                 </div>
                 
                 <div class="form-group">
                   <label>Tema:</label>
 
-                  <select class="form-control" name="area_evaluador">
+                  <select class="form-control" name="tema_pregunta">
                        <%_.each(temas,function(tema){%>
-                      <option value="<%=area.id_area%>"><%= tema.nombre_tema%></option>
+                      <option value="<%=tema.id_tema%>"><%= tema.nombre_tema%></option>
                       <%})%>
                  </select>
                   <div class="validation"></div>
                 </div>
                 
                 <div class="text-center">
-                  <input type="submit" name="Registrar Evaludor" value="Registrar Evaluador" class="btn btn-default"/>
+                  <input type="submit" name="Registrar Evaludor" value="Registrar pregunta" class="btn btn-default"/>
                 </div>
             </form>
           </div>
