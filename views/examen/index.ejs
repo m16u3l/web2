@@ -1,35 +1,3 @@
-<<<<<<< HEAD
-<section id="contact" class="fill">
-    <div class="container wow fadeInUp">
-      <h3>examenes
-      <table class='table'>
-          <tr>
-              <th>fecha inicio</th>
-              <th>fecha fin</th>
-              <th>area</th>
-              <!--<th>Area</th>-->
-              <th></th>
-              <th></th>
-              <th></th>
-          </tr>
-          <%_.each(examenes,function(examen){%>
-          <tr data-id="<%= examen.id %>" data-model="examen">
-              <td><%= examen.fecha_hora_inicio %></td>
-              <td><%= examen.fecha_hora fin %></td>
-              <td><%= examen.id_area_r %></td>
-
-              <td><a href="/examen/verexamenes/<%= examen.id %>" class="btn btn-sm btn-primary">Ver</a></td>
-              <td><a href="/examen/editar_examen/<%= examen.id %>" class="btn btn-sm btn-warning">Editar</a></td>
-              <td>
-              <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
-              </td>
-          </tr>
-          <% }) %>
-      </table>
-      <a href="/examen/new_examen">Registrar nuevo examen</a>
- </div>
-  </section>  
-=======
 <br><br><section id="examen" class="fill">
     <div class="container wow fadeInUp">
         <h3>Examenes</h3>
@@ -47,4 +15,3 @@
     </div>
 
 </section>  
->>>>>>> 0570a6843efdf85fe7e96d1ce3231a1c4532c9e2
