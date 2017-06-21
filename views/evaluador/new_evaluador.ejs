@@ -39,11 +39,11 @@
                 
                 <div class="form-group">
                   <label>Area:</label>
+
                   <select class="form-control" name="area_evaluador">
-                      <option value="Quimica">Quimica</option>
-                      <option value="Fisica">Fisica</option>
-                      <option value="Matematicas">Matematicas</option>
-                      <option value="Biología">Biología</option>
+                       <%_.each(areas,function(area){%>
+                      <option value="<%=area.id_area%>"><%= area.nombre_area%></option>
+                      <%})%>
                  </select>
                   <div class="validation"></div>
                 </div>

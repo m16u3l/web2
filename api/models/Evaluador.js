@@ -30,7 +30,7 @@ module.exports = {
 
 	  	//llave foranea
 		id_area_r:{
-			model:'Area',
+			model:'Area'
 		}
     }
 };
