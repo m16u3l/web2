@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
   Theme Name: Imperial
   Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/
@@ -6,6 +7,16 @@
 */
 /*--------------------------------------------------------------
 # General
+=======
+/*
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/
+  Author: BootstrapMade
+  Author URL: https://bootstrapmade.com
+*/
+/*--------------------------------------------------------------
+# General
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------------------------------------*/
 body {
   background: #fff;
@@ -79,8 +90,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 # Welcome
+=======
+/*--------------------------------------------------------------
+# Welcome
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------------------------------------*/
 #hero {
   display: table;
@@ -177,8 +193,13 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #03C4EB;
 }
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 # Header
+=======
+/*--------------------------------------------------------------
+# Header
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------------------------------------*/
 #header {
   background: #111;
@@ -227,8 +248,13 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.85);
 }
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 # Navigation Menu
+=======
+/*--------------------------------------------------------------
+# Navigation Menu
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
 .nav-menu, .nav-menu * {
@@ -450,10 +476,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 /* Sections Common
+=======
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Common
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 .section-title {
   font-size: 32px;
@@ -476,7 +509,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 /* Get Started Section
+=======
+/* Get Started Section
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 #about {
   background: #fff;
@@ -505,7 +542,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 /* Services Section
+=======
+/* Services Section
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 #services {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
@@ -555,7 +596,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
 }
 
+<<<<<<< HEAD
 /* Subscribe Section
+=======
+/* Subscribe Section
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 #subscribe {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/subscribe-bg.jpg) fixed center center;
@@ -598,7 +643,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #03C4EB;
 }
 
+<<<<<<< HEAD
 /* Portfolio Section
+=======
+/* Portfolio Section
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 #portfolio {
   background: #fff;
@@ -663,7 +712,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate3d(0, 0, 0);
 }
 
+<<<<<<< HEAD
 /* Testimonials Section
+=======
+/* Testimonials Section
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 #testimonials {
   background: #f6f6f6;
@@ -722,7 +775,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 4px;
 }
 
+<<<<<<< HEAD
 /* Team Section
+=======
+/* Team Section
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 #team {
   background: #fff;
@@ -772,7 +829,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 2px;
 }
 
+<<<<<<< HEAD
 /* Contact Section
+=======
+/* Contact Section
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------*/
 #contact {
   background: #f7f7f7;
@@ -843,8 +904,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #25d8fc;
 }
 
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 # Footer
+=======
+/*--------------------------------------------------------------
+# Footer
+>>>>>>> 1d6045777a202c6d587b8c8976b778860b7d85a6
 --------------------------------------------------------------*/
 #footer {
   background: #111;
