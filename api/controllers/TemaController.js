@@ -24,7 +24,7 @@ module.exports = {
 		}
 		Tema.create(objeto_tema)
 		.then(function(tema){
-			console.log(tema);
+			console.log("Se creo un nuevo tema");
 			return res.redirect('tema/index');
 		})
 		.catch(function(err){

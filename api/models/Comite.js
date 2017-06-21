@@ -21,9 +21,12 @@ module.exports = {
   			required: true
   		},
 
-      //
+      //llave foranea
       id_area_r:{
         model:'Area'
+      },
+      presidente:{
+        model:'Evaluador'
       }
 
 

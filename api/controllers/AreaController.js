@@ -22,7 +22,7 @@ module.exports = {
 		});
 	},
 	index: function (req, res) {
-      Area.find(function foundArea (err, areas) {
+      Area.find(function found_Area (err, areas) {
         if(err) return res.redirect('crear_area');
         res.view({
           areas:areas

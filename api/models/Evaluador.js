@@ -28,6 +28,9 @@ module.exports = {
 	  		columnName:'email_evaluador'
 	  	},
 
+
+	  	
+
 	  	//llave foranea
 		id_area_r:{
 			model:'Area'

@@ -38,9 +38,9 @@ module.exports = {
         	if(err) 
         		return res.redirect('registrar_evaluador');
         	res.view({
-          	evaluadores: evaluadores
-        });
-      });
+          		evaluadores: evaluadores
+      	    });
+      	});
   	}
 
   };

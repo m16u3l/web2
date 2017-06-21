@@ -1,0 +1,30 @@
+<section id="contact" class="fill">
+    <div class="container wow fadeInUp">
+      <h3>Comite
+      <table class='table'>
+          <tr>
+              <th>Nombre</th>
+              <th>Presidente</th>
+              <th>Area</th>
+              <!--<th>Area</th>-->
+              <th></th>
+              <th></th>
+              <th></th>
+          </tr>
+          <% _.each(comites, function(comite) { %>
+          <tr data-id="<%= comite.id %>" data-model="comite">
+              <td><%= comite.nombre_comite %></td>
+              <td><%= comite.presidente %></td>
+              <td><%= comite.id_area_r %></td>
+              
+              <td><a href="/comite/vercomitees/<%= comite.id %>" class="btn btn-sm btn-primary">Ver</a></td>
+              <td><a href="/comite/editar_comite/<%= comite.id %>" class="btn btn-sm btn-warning">Editar</a></td>
+              <td>
+              <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
+              </td>
+          </tr>
+          <% }) %>
+      </table>
+      <a href="/comite/new_comite">Registrar nuevo comite</a>
+ </div>
+  </section>  

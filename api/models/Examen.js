@@ -16,7 +16,17 @@ module.exports = {
   			primaryKey:true,
   			columnName:'id_examen'
   		},
-
+      fecha_hora_inicio:{
+        type:'datetime',
+        required:true,
+        columnName:'fecha_hora_inicio'
+      },
+      fecha_hora_fin:{
+        type:'datetime',
+        required:true,
+        columnName:'fecha_hora_fin'
+      },
+      
       //referencias
       Pregunta:{
         collection:'Pregunta',

@@ -1,0 +1,30 @@
+<section id="contact" class="fill">
+    <div class="container wow fadeInUp">
+      <h3>estudiantees
+      <table class='table'>
+          <tr>
+              <th>Codigo RUDE</th>
+              <th>CI</th>
+              <th>Nombre</th>
+              <!--<th>Area</th>-->
+              <th></th>
+              <th></th>
+              <th></th>
+          </tr>
+          <% _.each(estudiantes, function(estudiante) { %>
+          <tr data-id="<%= estudiante.id %>" data-model="estudiante">
+              <td><%= estudiante.codigo_rude %></td>
+              <td><%= estudiante.ic_estudiante %></td>
+              <td><%= estudiante.nombre_estudiante %></td>
+
+              <td><a href="/estudiante/ver_estudiante/<%= estudiante.id %>" class="btn btn-sm btn-primary">Ver</a></td>
+              <td><a href="/estudiante/editar_estudiante/<%= estudiante.id %>" class="btn btn-sm btn-warning">Editar</a></td>
+              <td>
+              <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
+              </td>
+          </tr>
+          <% }) %>
+      </table>
+      <a href="/estudiante/new_estudiante">Registrar nuevo estudiante</a>
+ </div>
+  </section>  
