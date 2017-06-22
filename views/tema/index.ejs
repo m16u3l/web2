@@ -1,15 +1,15 @@
 <section id="contact" class="fill">
     <div class="container wow fadeInUp">
-      <h3>temaes
-      <table class='table'>
+     <div class="col-md-offset-2 col-md-8">
+      <h3 class="section-title">Temas</h3>
+          <div class="section-title-divider"></div>
+      <table class='table table-bordered'>
           <tr>
               <th>ID</th>
               <th>Nombre</th>
               <th>Area</th>
               <!--<th>Area</th>-->
-              <th></th>
-              <th></th>
-              <th></th>
+              
           </tr>
           <% _.each(temas, function(tema) { %>
           <tr data-id="<%= tema.id %>" data-model="tema">
@@ -27,6 +27,8 @@
           </tr>
           <% }) %>
       </table>
-      <a href="/tema/new_tema">Registrar nuevo tema</a>
+      <div class="text-center">
+      <a class="btn btn-primary" href="/tema/new_tema">Registrar nuevo tema</a>
+      </div></div>
  </div>
   </section>
