@@ -1,34 +1,38 @@
 <section id="contact" class="fill">
     <div class="container wow fadeInUp">
-      <h3>Preguntas
-      <table class='table'>
-          <tr>
-              <th>Pregunta</th>
-              <th>Respuesta</th>
-              <th>Complejidad</th>
-              <th>Tema</th>
-              <!--<th>Area</th>-->
-              <th></th>
-              <th></th>
-              <th></th>
-          </tr>
-          <% _.each(preguntas, function(pregunta) { %>
-          <tr data-id="<%= pregunta.id %>" data-model="pregunta">
-              <td><%= pregunta.pregunta %></td>
-              <td><%= pregunta.respuesta %></td>
-              <td><%= pregunta.complejidad %></td>
-              <td><%= pregunta.id_pregunta_r%></td>
-              <!--==========================
-              <td><%= pregunta.id_area_r %></td>
-              ============================--> 
-              <td><a href="/pregunta/verpreguntaes/<%= pregunta.id %>" class="btn btn-sm btn-primary">Ver</a></td>
-              <td><a href="/pregunta/editar_pregunta/<%= pregunta.id %>" class="btn btn-sm btn-warning">Editar</a></td>
-              <td>
-              <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
-              </td>
-          </tr>
-          <% }) %>
-      </table>
-      <a href="/pregunta/new_pregunta">Registrar nueva pregunta</a>
- </div>
-  </section>  
+        
+        <div class="col-md-offset-2 col-md-8">
+        <h3 class="section-title">Preguntas</h3>
+        <div class="section-title-divider"></div>
+        <table class='table table-bordered'>
+            <tr>
+                <th>Pregunta</th>
+                <th>Respuesta</th>
+                <th>Complejidad</th>
+                <th>Tema</th>
+                <!--<th>Area</th>-->
+                
+                
+            </tr>
+            <% _.each(preguntas, function(pregunta) { %>
+            <tr data-id="<%= pregunta.id %>" data-model="pregunta">
+                <td><%= pregunta.pregunta %></td>
+                <td><%= pregunta.respuesta %></td>
+                <td><%= pregunta.complejidad %></td>
+                <td><%= pregunta.id_pregunta_r%></td>
+                <!--==========================
+<td><%= pregunta.id_area_r %></td>
+============================--> 
+                <td><a href="/pregunta/verpreguntaes/<%= pregunta.id %>" class="btn btn-sm btn-primary">Ver</a></td>
+                <td><a href="/pregunta/editar_pregunta/<%= pregunta.id %>" class="btn btn-sm btn-warning">Editar</a></td>
+                <td>
+                    <button type="button" class="btn btn-danger" id="btn_eliminar_area">Borrar</button>
+                </td>
+            </tr>
+            <% }) %>
+        </table>
+        <a class="btn btn-primary" href="/pregunta/new_pregunta">Registrar nueva pregunta</a>
+        </div>
+        
+    </div>
+</section>  
